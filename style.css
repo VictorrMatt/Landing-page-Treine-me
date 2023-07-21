@@ -1,125 +1,111 @@
 body {
   margin: 0;
-
-  font-family: "Open Sans", sans-serif;
-
-  background: linear-gradient(
-    90deg,
-    rgb(227, 255, 248, 0) 82.08%,
-    rgb(227, 255, 248, 0.38) 100%
-  );
-
+  font-family: "Open Sans", cursive;
   min-height: 100vh;
+  background: linear-gradient(
+    180deg,
+    rgba(227, 255, 248, 0) 82.08%,
+    rgba(227, 255, 248, 0.38) 100%
+  );
 }
 
-.page {
+#page {
   width: 1000px;
-  margin: 0 auto;
+  margin: 0 auto 0;
   padding-top: 65px;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-
-  margin-bottom: 15px;
+  margin-bottom: 55px;
 }
 
 ul {
   display: flex;
   list-style: none;
+  gap: 48px;
   margin: 0;
   padding: 0;
-  gap: 50px;
-}
-
-a {
-  color: #1f1534;
-  text-decoration: none;
+  align-items: center;
+  font-family: "Mulish", cursive;
 }
 
 ul li a {
+  text-decoration: none;
+  color: #7d7987;
   opacity: 0.5;
 }
 
 ul li a:hover {
   font-weight: bold;
+  color: #000;
   opacity: 1;
 }
 
-main {
-  margin-top: 58px;
-  display: flex;
-  justify-content: space-between;
-}
-
-h1,
-ul {
-  font-family: "Mulish", sans-serif;
-}
-
 h1 {
+  font-family: "Mulish", cursive;
   font-size: 49px;
   line-height: 56px;
-  color: #1f1534;
-
   font-weight: normal;
-
-  width: 490px;
 }
 
 h1 span {
-  color: #89c5cc;
   font-weight: bold;
+  color: #89c5cc;
 }
 
 section p {
   font-size: 14px;
   line-height: 28px;
   color: #7d7987;
-
-  margin: 40px 0;
+  margin-bottom: 40px;
 }
 
 button {
-  color: white;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 21px;
-
-  background: #69b99d;
-  border: 0;
-  padding: 14px 32px 15px;
-
   display: flex;
-  align-items: center;
   gap: 10px;
+  align-items: center;
+  padding: 15px 32px;
 
+  color: #f9f9f9;
+  background-color: #69b99d;
+  font-family: "Open Sans", cursive;
+  text-transform: uppercase;
+
+  border-style: none;
   border-radius: 4px;
 
   cursor: pointer;
 }
 
 button:hover {
-  background: #4ea788;
+  background-color: #4b997e;
+}
+
+main section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1000px;
+  height: 435px;
 }
 
 footer {
   font-size: 14px;
   line-height: 28px;
-
+  margin-top: 83px;
   text-align: center;
-
-  margin-top: 80px;
 }
 
 footer a {
+  text-decoration: none;
   font-weight: bold;
+  color: #000;
 }
 
-#balls {
+#detail {
+  position: fixed;
   bottom: 0;
   right: 0;
 }
